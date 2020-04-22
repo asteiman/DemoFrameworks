@@ -29,6 +29,18 @@
 		D9484FBD244FF94400DDE177 /* Shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D9484FA8244FF8B900DDE177 /* Shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D9484FC1244FF94800DDE177 /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9484FA8244FF8B900DDE177 /* Shared.framework */; };
 		D9484FC2244FF94800DDE177 /* Shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D9484FA8244FF8B900DDE177 /* Shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D9484FCE244FF96400DDE177 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9484F6C244FF83F00DDE177 /* AppDelegate.swift */; };
+		D9484FCF244FF96400DDE177 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9484F6E244FF83F00DDE177 /* SceneDelegate.swift */; };
+		D9484FD0244FF96400DDE177 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9484F70244FF83F00DDE177 /* ContentView.swift */; };
+		D9484FD2244FF96400DDE177 /* StoreA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9484F85244FF8A800DDE177 /* StoreA.framework */; };
+		D9484FD3244FF96400DDE177 /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9484FA8244FF8B900DDE177 /* Shared.framework */; };
+		D9484FD4244FF96400DDE177 /* StoreB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9484F97244FF8B100DDE177 /* StoreB.framework */; };
+		D9484FD6244FF96400DDE177 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9484F77244FF84000DDE177 /* LaunchScreen.storyboard */; };
+		D9484FD7244FF96400DDE177 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9484F75244FF84000DDE177 /* Preview Assets.xcassets */; };
+		D9484FD8244FF96400DDE177 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9484F72244FF84000DDE177 /* Assets.xcassets */; };
+		D9484FDA244FF96400DDE177 /* StoreA.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D9484F85244FF8A800DDE177 /* StoreA.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D9484FDB244FF96400DDE177 /* Shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D9484FA8244FF8B900DDE177 /* Shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D9484FDC244FF96400DDE177 /* StoreB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D9484F97244FF8B100DDE177 /* StoreB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +73,27 @@
 			remoteInfo = Shared;
 		};
 		D9484FC3244FF94800DDE177 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9484F61244FF83F00DDE177 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9484FA7244FF8B900DDE177;
+			remoteInfo = Shared;
+		};
+		D9484FC8244FF96400DDE177 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9484F61244FF83F00DDE177 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9484F84244FF8A800DDE177;
+			remoteInfo = StoreA;
+		};
+		D9484FCA244FF96400DDE177 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9484F61244FF83F00DDE177 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9484F96244FF8B100DDE177;
+			remoteInfo = StoreB;
+		};
+		D9484FCC244FF96400DDE177 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D9484F61244FF83F00DDE177 /* Project object */;
 			proxyType = 1;
@@ -105,10 +138,23 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D9484FD9244FF96400DDE177 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D9484FDA244FF96400DDE177 /* StoreA.framework in Embed Frameworks */,
+				D9484FDB244FF96400DDE177 /* Shared.framework in Embed Frameworks */,
+				D9484FDC244FF96400DDE177 /* StoreB.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D9484F69244FF83F00DDE177 /* DemoFrameworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoFrameworks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9484F69244FF83F00DDE177 /* StoreA Target.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StoreA Target.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9484F6C244FF83F00DDE177 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9484F6E244FF83F00DDE177 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D9484F70244FF83F00DDE177 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -128,6 +174,8 @@
 		D9484FB5244FF8E500DDE177 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		D9484FB7244FF92200DDE177 /* StoreAColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreAColorPalette.swift; sourceTree = "<group>"; };
 		D9484FB9244FF92D00DDE177 /* StoreBColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreBColorPalette.swift; sourceTree = "<group>"; };
+		D9484FE0244FF96400DDE177 /* StoreB Target.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StoreB Target.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9484FE1244FF96400DDE177 /* DemoFrameworks copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DemoFrameworks copy-Info.plist"; path = "/Users/alan.steiman/Desktop/DemoFrameworks/DemoFrameworks copy-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +212,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D9484FD1244FF96400DDE177 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9484FD2244FF96400DDE177 /* StoreA.framework in Frameworks */,
+				D9484FD3244FF96400DDE177 /* Shared.framework in Frameworks */,
+				D9484FD4244FF96400DDE177 /* StoreB.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -176,16 +234,18 @@
 				D9484FA9244FF8B900DDE177 /* Shared */,
 				D9484F6A244FF83F00DDE177 /* Products */,
 				D9484FBB244FF94400DDE177 /* Frameworks */,
+				D9484FE1244FF96400DDE177 /* DemoFrameworks copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
 		D9484F6A244FF83F00DDE177 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D9484F69244FF83F00DDE177 /* DemoFrameworks.app */,
+				D9484F69244FF83F00DDE177 /* StoreA Target.app */,
 				D9484F85244FF8A800DDE177 /* StoreA.framework */,
 				D9484F97244FF8B100DDE177 /* StoreB.framework */,
 				D9484FA8244FF8B900DDE177 /* Shared.framework */,
+				D9484FE0244FF96400DDE177 /* StoreB Target.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -279,9 +339,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D9484F68244FF83F00DDE177 /* DemoFrameworks */ = {
+		D9484F68244FF83F00DDE177 /* StoreA Target */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D9484F7D244FF84000DDE177 /* Build configuration list for PBXNativeTarget "DemoFrameworks" */;
+			buildConfigurationList = D9484F7D244FF84000DDE177 /* Build configuration list for PBXNativeTarget "StoreA Target" */;
 			buildPhases = (
 				D9484F65244FF83F00DDE177 /* Sources */,
 				D9484F66244FF83F00DDE177 /* Frameworks */,
@@ -295,9 +355,9 @@
 				D9484F9D244FF8B100DDE177 /* PBXTargetDependency */,
 				D9484FAE244FF8B900DDE177 /* PBXTargetDependency */,
 			);
-			name = DemoFrameworks;
+			name = "StoreA Target";
 			productName = DemoFrameworks;
-			productReference = D9484F69244FF83F00DDE177 /* DemoFrameworks.app */;
+			productReference = D9484F69244FF83F00DDE177 /* StoreA Target.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D9484F84244FF8A800DDE177 /* StoreA */ = {
@@ -358,6 +418,27 @@
 			productReference = D9484FA8244FF8B900DDE177 /* Shared.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		D9484FC6244FF96400DDE177 /* StoreB Target */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9484FDD244FF96400DDE177 /* Build configuration list for PBXNativeTarget "StoreB Target" */;
+			buildPhases = (
+				D9484FCD244FF96400DDE177 /* Sources */,
+				D9484FD1244FF96400DDE177 /* Frameworks */,
+				D9484FD5244FF96400DDE177 /* Resources */,
+				D9484FD9244FF96400DDE177 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9484FC7244FF96400DDE177 /* PBXTargetDependency */,
+				D9484FC9244FF96400DDE177 /* PBXTargetDependency */,
+				D9484FCB244FF96400DDE177 /* PBXTargetDependency */,
+			);
+			name = "StoreB Target";
+			productName = DemoFrameworks;
+			productReference = D9484FE0244FF96400DDE177 /* StoreB Target.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -398,7 +479,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D9484F68244FF83F00DDE177 /* DemoFrameworks */,
+				D9484F68244FF83F00DDE177 /* StoreA Target */,
+				D9484FC6244FF96400DDE177 /* StoreB Target */,
 				D9484F84244FF8A800DDE177 /* StoreA */,
 				D9484F96244FF8B100DDE177 /* StoreB */,
 				D9484FA7244FF8B900DDE177 /* Shared */,
@@ -435,6 +517,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9484FD5244FF96400DDE177 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9484FD6244FF96400DDE177 /* LaunchScreen.storyboard in Resources */,
+				D9484FD7244FF96400DDE177 /* Preview Assets.xcassets in Resources */,
+				D9484FD8244FF96400DDE177 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +567,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D9484FCD244FF96400DDE177 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9484FCE244FF96400DDE177 /* AppDelegate.swift in Sources */,
+				D9484FCF244FF96400DDE177 /* SceneDelegate.swift in Sources */,
+				D9484FD0244FF96400DDE177 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -502,6 +604,21 @@
 			isa = PBXTargetDependency;
 			target = D9484FA7244FF8B900DDE177 /* Shared */;
 			targetProxy = D9484FC3244FF94800DDE177 /* PBXContainerItemProxy */;
+		};
+		D9484FC7244FF96400DDE177 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9484F84244FF8A800DDE177 /* StoreA */;
+			targetProxy = D9484FC8244FF96400DDE177 /* PBXContainerItemProxy */;
+		};
+		D9484FC9244FF96400DDE177 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9484F96244FF8B100DDE177 /* StoreB */;
+			targetProxy = D9484FCA244FF96400DDE177 /* PBXContainerItemProxy */;
+		};
+		D9484FCB244FF96400DDE177 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9484FA7244FF8B900DDE177 /* Shared */;
+			targetProxy = D9484FCC244FF96400DDE177 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -844,6 +961,48 @@
 			};
 			name = Release;
 		};
+		D9484FDE244FF96400DDE177 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"DemoFrameworks/Preview Content\"";
+				DEVELOPMENT_TEAM = 9SR3A23TQJ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "DemoFrameworks copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = alan.DemoFrameworks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9484FDF244FF96400DDE177 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"DemoFrameworks/Preview Content\"";
+				DEVELOPMENT_TEAM = 9SR3A23TQJ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "DemoFrameworks copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = alan.DemoFrameworks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -856,7 +1015,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D9484F7D244FF84000DDE177 /* Build configuration list for PBXNativeTarget "DemoFrameworks" */ = {
+		D9484F7D244FF84000DDE177 /* Build configuration list for PBXNativeTarget "StoreA Target" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D9484F7E244FF84000DDE177 /* Debug */,
@@ -888,6 +1047,15 @@
 			buildConfigurations = (
 				D9484FB2244FF8B900DDE177 /* Debug */,
 				D9484FB3244FF8B900DDE177 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9484FDD244FF96400DDE177 /* Build configuration list for PBXNativeTarget "StoreB Target" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9484FDE244FF96400DDE177 /* Debug */,
+				D9484FDF244FF96400DDE177 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
