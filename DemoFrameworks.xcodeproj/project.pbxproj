@@ -41,6 +41,8 @@
 		D9484FDA244FF96400DDE177 /* StoreA.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D9484F85244FF8A800DDE177 /* StoreA.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D9484FDB244FF96400DDE177 /* Shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D9484FA8244FF8B900DDE177 /* Shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D9484FDC244FF96400DDE177 /* StoreB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D9484F97244FF8B100DDE177 /* StoreB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D9484FE4244FF9B700DDE177 /* ColorKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9484FE2244FF9B000DDE177 /* ColorKit.swift */; };
+		D9484FE5244FF9B800DDE177 /* ColorKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9484FE2244FF9B000DDE177 /* ColorKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -176,6 +178,7 @@
 		D9484FB9244FF92D00DDE177 /* StoreBColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreBColorPalette.swift; sourceTree = "<group>"; };
 		D9484FE0244FF96400DDE177 /* StoreB Target.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StoreB Target.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9484FE1244FF96400DDE177 /* DemoFrameworks copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DemoFrameworks copy-Info.plist"; path = "/Users/alan.steiman/Desktop/DemoFrameworks/DemoFrameworks copy-Info.plist"; sourceTree = "<absolute>"; };
+		D9484FE2244FF9B000DDE177 /* ColorKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +263,7 @@
 				D9484F77244FF84000DDE177 /* LaunchScreen.storyboard */,
 				D9484F7A244FF84000DDE177 /* Info.plist */,
 				D9484F74244FF84000DDE177 /* Preview Content */,
+				D9484FE2244FF9B000DDE177 /* ColorKit.swift */,
 			);
 			path = DemoFrameworks;
 			sourceTree = "<group>";
@@ -537,6 +541,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9484FE5244FF9B800DDE177 /* ColorKit.swift in Sources */,
 				D9484F6D244FF83F00DDE177 /* AppDelegate.swift in Sources */,
 				D9484F6F244FF83F00DDE177 /* SceneDelegate.swift in Sources */,
 				D9484F71244FF83F00DDE177 /* ContentView.swift in Sources */,
@@ -571,6 +576,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9484FE4244FF9B700DDE177 /* ColorKit.swift in Sources */,
 				D9484FCE244FF96400DDE177 /* AppDelegate.swift in Sources */,
 				D9484FCF244FF96400DDE177 /* SceneDelegate.swift in Sources */,
 				D9484FD0244FF96400DDE177 /* ContentView.swift in Sources */,
