@@ -9,8 +9,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var colorKit: ColorKit
+    
     var body: some View {
         Text("Hello, World!")
+            .foregroundColor(Color(colorKit.primaryColor()))
     }
 }
 
